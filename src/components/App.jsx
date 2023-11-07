@@ -15,7 +15,6 @@ export const App = () => {
 
   useEffect(() => {
     window.localStorage.setItem(LS_KEY, JSON.stringify(contacts));
-    setContacts(contacts);
   }, [contacts]);
 
   const addContact = ({ name, number }) => {
